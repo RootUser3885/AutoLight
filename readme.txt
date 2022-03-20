@@ -1,6 +1,11 @@
 This program is written to control neopixel LED strips by interfacing
 an ESP32 with WLED installed. Communication is via serial JSON.
-Docs on that protocol on WLEDs site.
+Docs on that protocol on WLEDs site. You might wonder why I didn't just
+modify the WLED source to add these features. The reason is because I
+want to be able to update WLED without having to merge my changes each
+time to make a custom build. This way I can use a bone stock install
+of WLED on an ESP32 and expect this to work independent of major changes
+to the WLED source, as long as serial JSON is supported this will work.
 
 I originally wrote this for a 2006 Pontiac GTO with a fun little cam
 and long tube headers. Fun car, 11/10 good time.

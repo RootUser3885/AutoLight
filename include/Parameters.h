@@ -14,6 +14,7 @@
 #define WLED_STARTUP_TIME 			1000
 
 // Define LED Preset Effects
+// These aren't used anymore, just used to show which effect is which
 #define PS_DEFAULT_EFFECT 				1
 #define PS_BRAKE_EFFECT 				2
 #define PS_DRIVERS_BLINKER_EFFECT 		3
@@ -28,6 +29,6 @@
 #define LIGHT_BRAKE 		15
 #define LIGHT_L_BLINKER 	16
 #define LIGHT_R_BLINKER 	17
-#define LIGHT_HEADLIGHTS 	18
-#define LIGHT_DRLS 			19
-#define LIGHT_PARKING 		20
+// #define LIGHT_HEADLIGHTS 	18
+// #define LIGHT_DRLS 			19
+// #define LIGHT_PARKING 		20
