@@ -1,0 +1,34 @@
+Goals
+	- Control multiple lights on a vehicle while maintaining safety
+	- Allow custom effects but only if it is safe to do so
+	- Change effect based on events whilst driving
+	- Read said events from obd or CAN-Bus if possible
+	- Send settings to WLED via Serial1 port
+
+Effect List and ID
+	1: Driving Lights
+	2: Startup
+	3: Blinker Drivers
+	4: Blinker Passengers
+	5: Hazards
+
+Behavior
+	- Startup effect can be anything
+	- Once Speed > 0 then set to driving mode and stay
+	- Show blinker effect during blinker use (duh)
+	- same for the hazards
+
+Serial syntax
+	- \" prints a quote " ,IE: "{\"ps\":1}"
+
+	- Sets preset 1
+		- {"ps":1}
+		- "{\"ps\":1}"
+
+	- Turns LEDs off or on
+		- {"on":true}
+		- "{\"on\":true}"
+	
+	- Sets Brightness (0 - 100)
+		- {"bri":0}
+		- "{\"bri\":0}"
